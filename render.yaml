@@ -3,7 +3,7 @@ services:
     name: nodejs
     buildCommand: npm install && npm run build
     startCommand: node server.js
-    runtime: nodejs
+    runtime: node
 
   - type: web
     name: python
