@@ -2,9 +2,11 @@ services:
   - type: web
     name: nodejs
     buildCommand: npm install && npm run build
-    startCommand: node server.js  # Replace with your Node.js script
+    startCommand: node server.js
+    runtime: nodejs14  # Replace with your desired Node.js version
 
   - type: web
     name: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python scan.py  # Replace with your Python script
+    startCommand: python scan.py
+    runtime: python3.9  # Replace with your desired Python version
