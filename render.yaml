@@ -1,8 +1,10 @@
 services:
-  - name: nodejs
+  - type: web
+    name: nodejs
     buildCommand: npm install && npm run build
     runCommand: npm start
 
-  - name: python
+  - type: web
+    name: python
     buildCommand: pip install -r requirements.txt
     runCommand: python scan.py
