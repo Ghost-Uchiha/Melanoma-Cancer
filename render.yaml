@@ -3,10 +3,10 @@ services:
     name: nodejs
     buildCommand: npm install && npm run build
     startCommand: node server.js
-    Runtime: nodejs-14.17.0
+    runtime: nodejs-14.17.0
 
   - type: web
     name: python
     buildCommand: pip install -r requirements.txt
     startCommand: python scan.py
-    Runtime: python-3.7.0
+    runtime: python-3.7.0
