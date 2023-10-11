@@ -2,9 +2,9 @@ services:
   - type: web
     name: nodejs
     buildCommand: npm install && npm run build
-    runCommand: node server.js  # Replace with your Node.js script
+    startCommand: node server.js  # Replace with your Node.js script
 
   - type: web
     name: python
     buildCommand: pip install -r requirements.txt
-    runCommand: python scan.py  # Replace with your Python script
+    startCommand: python scan.py  # Replace with your Python script
